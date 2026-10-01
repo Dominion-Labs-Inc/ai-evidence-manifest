@@ -5,11 +5,11 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TorinAI Unified Cognitive Substrate | Dominion Labs</title>
-<meta name="description" content="The architecture of TorinAI: a persistent cognitive substrate organising reasoning, learning, memory, action, belief, competence">
+<title>Lyric Unified Cognitive Substrate | Dominion Labs</title>
+<meta name="description" content="The architecture of Lyric: a persistent cognitive substrate organising reasoning, learning, memory, action, belief, competence">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="article">
-<meta property="og:title" content="TorinAI Unified Cognitive Substrate">
+<meta property="og:title" content="Lyric Unified Cognitive Substrate">
 <meta property="og:description" content="Architecture of persistent learning, reasoning, memory, action, and epistemic governance; one coordinator, one shared cognitive state; no language model in the cognitive loop.">
 <meta property="og:url" content="https://dmnlabs.org/research/unified-substrate/">
 <link rel="icon" href="/favicon.ico?v=4" sizes="any">
@@ -38,11 +38,11 @@ table.data,.data-wrap{break-inside:avoid;page-break-inside:avoid}
     <meta property="article:published_time" content="2025-03-18">
     <meta property="article:author" content="Stefan Ragland">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="TorinAI Unified Cognitive Substrate">
+    <meta name="twitter:title" content="Lyric Unified Cognitive Substrate">
     <meta name="twitter:description" content="Architecture of persistent learning, reasoning, memory, action, and epistemic governance; one coordinator, one shared cognitive state; no language model in the cognitive loop.">
     <meta name="twitter:image" content="https://dmnlabs.org/images/og-image.png">
     <!-- Google Scholar citation tags -->
-    <meta name="citation_title" content="TorinAI Unified Cognitive Substrate">
+    <meta name="citation_title" content="Lyric Unified Cognitive Substrate">
     <meta name="citation_author" content="Ragland, Stefan">
     <meta name="citation_publication_date" content="2025/03/18">
     <meta name="citation_online_date" content="2025/03/18">
@@ -54,8 +54,8 @@ table.data,.data-wrap{break-inside:avoid;page-break-inside:avoid}
 {
   "@context": "https://schema.org",
   "@type": "ScholarlyArticle",
-  "headline": "TorinAI Unified Cognitive Substrate",
-  "name": "TorinAI Unified Cognitive Substrate",
+  "headline": "Lyric Unified Cognitive Substrate",
+  "name": "Lyric Unified Cognitive Substrate",
   "description": "Architecture of persistent learning, reasoning, memory, action, and epistemic governance; one coordinator, one shared cognitive state; no language model in the cognitive loop.",
   "url": "https://dmnlabs.org/research/unified-substrate/",
   "datePublished": "2025-03-18T12:00:00Z",
@@ -106,7 +106,7 @@ table.data,.data-wrap{break-inside:avoid;page-break-inside:avoid}
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "TorinAI Unified Cognitive Substrate",
+      "name": "Lyric Unified Cognitive Substrate",
       "item": "https://dmnlabs.org/research/unified-substrate/"
     }
   ]
@@ -119,7 +119,7 @@ table.data,.data-wrap{break-inside:avoid;page-break-inside:avoid}
 <main id="main" class="wrap">
 <header class="paper">
 <div class="eyebrow">Architecture</div>
-<h1>TorinAI Unified Cognitive Substrate</h1>
+<h1>Lyric Unified Cognitive Substrate</h1>
 <div class="subtitle">Architecture of persistent learning, reasoning, memory, action, and epistemic governance</div>
 <div class="byline">Stefan Ragland</div>
 <div class="byline">Dominion Labs Research &amp; Development</div>
@@ -130,11 +130,11 @@ table.data,.data-wrap{break-inside:avoid;page-break-inside:avoid}
 
 <div class="abstract">
 <span class="lbl">Abstract</span>
-<p>TorinAI is a persistent cognitive substrate designed to maintain and develop structured knowledge, memory, beliefs, learned operators, competence, and goals over time. Rather than treating intelligence as the output of a single model invocation, Torin organises cognition as a set of interacting faculties operating over one shared persistent state. Reasoning changes beliefs; experience produces learning; learning produces operators and knowledge; competence shapes exploration; goals drive planning and action; action is independently re-observed; and epistemic governance controls when internally generated conclusions may become authoritative knowledge or executable decisions. TorinAI does not use a language model in its cognition: its persistent state, reasoning, learning, planning, verification, and epistemic authority run on the substrate's own mechanisms. No component consults a language model. The one module that once could, a teaching policy that proposed candidate lessons for the substrate to test against the world, has since been removed together with every model entry point, so the property is structural rather than a matter of configuration. This document describes that architecture; its persistent state, its cognitive faculties, the loops that connect them, its grounded model of task completion, and the governance boundary that decides what becomes authoritative.</p>
+<p>Lyric is a persistent cognitive substrate designed to maintain and develop structured knowledge, memory, beliefs, learned operators, competence, and goals over time. Rather than treating intelligence as the output of a single model invocation, Lyric organises cognition as a set of interacting faculties operating over one shared persistent state. Reasoning changes beliefs; experience produces learning; learning produces operators and knowledge; competence shapes exploration; goals drive planning and action; action is independently re-observed; and epistemic governance controls when internally generated conclusions may become authoritative knowledge or executable decisions. Lyric does not use a language model in its cognition: its persistent state, reasoning, learning, planning, verification, and epistemic authority run on the substrate's own mechanisms. No component consults a language model. The one module that once could, a teaching policy that proposed candidate lessons for the substrate to test against the world, has since been removed together with every model entry point, so the property is structural rather than a matter of configuration. This document describes that architecture; its persistent state, its cognitive faculties, the loops that connect them, its grounded model of task completion, and the governance boundary that decides what becomes authoritative.</p>
 </div>
 
-<section id="s1"><h2><span class="num">1</span>What TorinAI is</h2>
-<p>TorinAI is a <em>persistent cognitive substrate</em>. A conventional model answers a prompt and forgets; the substrate instead holds and develops a body of structured cognition (what it knows, what it has experienced, what it believes and how strongly, what operations it has learned to perform, what it is competent at, and what it is trying to do) and it carries that state forward across time. Intelligence, in this design, is not a single act of generation but the continuing interaction of cognitive faculties over shared, durable state.</p>
+<section id="s1"><h2><span class="num">1</span>What Lyric is</h2>
+<p>Lyric is a <em>persistent cognitive substrate</em>. A conventional model answers a prompt and forgets; the substrate instead holds and develops a body of structured cognition (what it knows, what it has experienced, what it believes and how strongly, what operations it has learned to perform, what it is competent at, and what it is trying to do) and it carries that state forward across time. Intelligence, in this design, is not a single act of generation but the continuing interaction of cognitive faculties over shared, durable state.</p>
 <p>The substrate is organised as one coordinator in which each faculty is a pipeline that reads and writes the same persistent state. The faculties are reasoning, learning, memory, execution, domain modelling, intrinsic motivation, and a model of the system's own state. What makes them a substrate rather than a toolbox is that the output of one becomes structured input to another: a conclusion revises a belief, an action produces an experience, an experience induces an operator, a competence gap raises the motivation to explore. The document that follows is the architecture of that interaction.</p>
 </section>
 
